@@ -306,11 +306,11 @@ const showPassword = function (id) {
 const toggleVisibleIcon = function (id) {
   let element = document.getElementById(id);
   let currentState = element.getAttribute('src');
-  if (currentState === '../assets/img/icons/visibility_off.svg' || currentState === '../assets/img/icons/visibility.svg') {
-    if (currentState === '../assets/img/icons/visibility_off.svg') {
-      element.setAttribute('src', '../assets/img/icons/visibility.svg');
+  if (currentState === '../icons/visibility_off.svg' || currentState === '../icons/visibility.svg') {
+    if (currentState === '../icons/visibility_off.svg') {
+      element.setAttribute('src', '../icons/visibility.svg');
     } else {
-      element.setAttribute('src', '../assets/img/icons/visibility_off.svg');
+      element.setAttribute('src', '../icons/visibility_off.svg');
     }
   }
 };
@@ -324,9 +324,9 @@ const handlePwdIcon = function (idInput, idImg) {
   let inputField = document.getElementById(idInput);
   let el = document.getElementById(idImg);
   if (inputField.value !== '') {
-    el.setAttribute('src', '../assets/img/icons/visibility_off.svg');
+    el.setAttribute('src', '../icons/visibility_off.svg');
   } else {
-    el.setAttribute('src', '../assets/img/icons/lock.svg');
+    el.setAttribute('src', '../icons/lock.svg');
   }
 };
 

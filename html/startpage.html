@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/login.css" />
+    <link rel="stylesheet" href="../static/startpage.css" />
     <link rel="stylesheet" href="../static/font.css" />
     <script src="../sensitive/token.js"></script>
     <script src="../sensitive/url.js"></script>
@@ -20,15 +20,14 @@
     <title>Login</title>
   </head>
   <body class="login-body disp-flex" onload="init();initLocalStorage()">
-    <img class="login-logo" src="../icons/logo_blue.svg" alt="Logo" />
+    <img class="logo-blue" src="../icons/logo_blue.svg" alt="Logo" />
+    <img class="logo-white" src="../icons/logo.svg" alt="Logo" />
+    <div class="overlay-startpage"></div>
     <div class="container-login">
       <div class="menu-login">
         <div class="icon-links-login">
           <span class="question-user">Not a Join user?</span>
-          <button onclick="userAction('signup')" class="sign-up blue-btn">
-            Sign up
-            <!-- <a class="signup-link" href="../html/signup.html">Sign up</a> -->
-          </button>
+          <button onclick="userAction('signup')" class="sign-up blue-btn">Sign up</button>
         </div>
       </div>
       <form class="user-log-data-section disp-flex" onsubmit="checkUserData();return false">
@@ -47,7 +46,6 @@
               </div>
               <p id="emailError"></p>
             </div>
-            <!-- hier -->
             <div class="inp-ctn">
               <div class="inpt-mail-icon-grp ps-rel-pwd">
                 <input
@@ -72,7 +70,6 @@
           </div>
           <div class="remember-line disp-flex ft-sz-400">
             <div class="remember-me disp-flex">
-              <!-- <input class="check-box" type="checkbox" /> -->
               <img
                 id="checkbox-login"
                 src="../icons/checkBox.svg"
@@ -86,8 +83,8 @@
         </div>
 
         <div class="btn-line disp-flex">
-          <button class="blue-btn log-guest-btn">Log in</button>
-          <a href="../html/summary.html" class="white-btn log-guest-btn">Guest Log in</a>
+          <button class="blue-btn log-guest-btn">Log in</button
+          ><a href="../html/summary.html" class="white-btn log-guest-btn">Guest Log in</a>
         </div>
       </form>
       <div class="privacy-link-login">
